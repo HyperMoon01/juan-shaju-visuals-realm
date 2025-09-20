@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import DynamicTagline from './DynamicTagline';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,7 +44,7 @@ const Navigation = () => {
           onClick={() => scrollToSection('hero')}
         >
           Juan Shaju
-          <div className="text-xs font-normal opacity-60 tracking-wider">VISUAREALM</div>
+          <DynamicTagline />
         </div>
 
         {/* Desktop Navigation */}

@@ -126,6 +126,38 @@ export default {
             transform: "translateX(100vw)",
           },
         },
+        "film-frame-appear": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(20px) scale(0.8)",
+            filter: "blur(2px)",
+          },
+          "50%": {
+            opacity: "0.7",
+            filter: "blur(1px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0) scale(1)",
+            filter: "blur(0)",
+          },
+        },
+        "film-title-flicker": {
+          "0%, 100%": {
+            textShadow: "0 0 5px hsl(0 0% 95% / 0.2)",
+          },
+          "50%": {
+            textShadow: "0 0 10px hsl(0 0% 95% / 0.4), 0 0 20px hsl(0 0% 95% / 0.2)",
+          },
+        },
+        "typewriter": {
+          "from": {
+            width: "0",
+          },
+          "to": {
+            width: "100%",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -134,6 +166,9 @@ export default {
         "fade-in-left": "fade-in-left 0.6s ease-out",
         "glow": "glow 3s ease-in-out infinite",
         "film-reel": "film-reel 2s ease-in-out",
+        "film-frame-appear": "film-frame-appear 0.8s ease-out",
+        "film-title-flicker": "film-title-flicker 4s ease-in-out infinite",
+        "typewriter": "typewriter 2s steps(30) forwards",
       },
     },
   },
