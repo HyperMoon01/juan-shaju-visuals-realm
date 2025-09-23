@@ -1,12 +1,13 @@
 import juanPortrait from "@/assets/juan-portrait.jpg";
 
+
 const AboutSection = () => {
   const milestones = [
-    { year: '2023', event: 'Film Club President', description: 'Led creative direction and production workflows' },
-    { year: '2024', event: 'Signal 86 Release', description: 'Silent comedy bromance short film' },
-    { year: '2024', event: 'Red Veil Production', description: 'Psychological horror film in development' },
-    { year: '2025', event: 'TMU Image Arts', description: 'Advancing craft through formal education' },
-    { year: '2025', event: 'Nova Realm Entertainment', description: 'Building a creative studio for compelling stories' },
+    { year: '2023', event: 'Film Club | President', description: 'Led creative direction and production workflows' },
+    { year: '2024', event: 'Signal 86 Release | Director, DOP', description: 'Silent Thriller Sci-fi short film' },
+    { year: '2024', event: 'Red Veil Production | Producer', description: 'Psychological horror film in development' },
+    { year: '2025', event: 'TMU Image Arts | Vice President', description: 'Advancing craft through formal education' },
+    { year: '2025', event: 'Nova Realm Entertainment | Director', description: 'Building a creative studio for compelling stories' },
   ];
 
   return (
@@ -45,14 +46,14 @@ const AboutSection = () => {
               
               <div className="space-y-4 body-text text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  I'm an 18-year-old filmmaker and storyteller based in Toronto, Canada. 
+                  I'm an 19-year-old filmmaker and storyteller based in Toronto, Canada. 
                   I direct, edit, and produce short films like <em>Signal 86</em> and <em>Red Veil</em>. 
                   My passion is telling raw, human stories that feel alive.
                 </p>
                 
                 <p>
                   I'm building <strong className="text-primary">Nova Realm Entertainment</strong> to create 
-                  films and art that move people. Every frame, every cut, every story — it all matters.
+                  films and art that move people. Every frame, every cut, every story.. it all matters.
                 </p>
                 
                 <p>

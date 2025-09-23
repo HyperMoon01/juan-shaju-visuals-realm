@@ -29,6 +29,7 @@ const Navigation = () => {
     { name: 'Portfolio', id: 'portfolio' },
     { name: 'Journal', id: 'journal' },
     { name: 'Contact', id: 'contact' },
+    { name: 'Resume', id: 'contact' },
   ];
 
   return (

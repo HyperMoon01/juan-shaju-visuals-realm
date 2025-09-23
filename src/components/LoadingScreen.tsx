@@ -86,7 +86,7 @@ const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
         {/* Vintage film lab text */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
           <p className="font-mono text-xs text-muted-foreground/60 tracking-wider">
-            VISUAREALM FILM LAB
+            JuanRealm FILM LAB
           </p>
         </div>
       </div>

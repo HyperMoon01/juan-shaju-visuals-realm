@@ -1,5 +1,7 @@
 import { ExternalLink, Play } from 'lucide-react';
 import { useState } from 'react';
+import Signal86 from "@/assets/signal86.jpg";
+import redVeil from "@/assets/red-veil.jpg";
 
 const PortfolioSection = () => {
   const [hoveredProject, setHoveredProject] = useState<string | null>(null);
@@ -8,34 +10,34 @@ const PortfolioSection = () => {
     {
       id: 'signal-86',
       title: 'Signal 86',
-      category: 'Short Film',
-      description: 'A silent comedy bromance that explores friendship through visual storytelling',
+      category: 'Sci-Fi Film',
+      description: 'A silent sci-fi thriller  that explores personal curiosity through visual storytelling',
       year: '2024',
       status: 'Released',
-      image: '/placeholder.svg', // Will be replaced with generated image
+      image: Signal86,
       video: 'https://vimeo.com/example', // Placeholder
-      tags: ['Comedy', 'Silent Film', 'Bromance']
+      tags: ['Thriller', 'Silent Film', 'Sci-FI']
     },
     {
       id: 'red-veil',
-      title: 'Red Veil',
+      title: 'Subject V',
       category: 'Horror Film',
       description: 'A psychological horror film exploring the depths of human consciousness',
       year: '2024',
-      status: 'In Production',
-      image: '/placeholder.svg', // Will be replaced with generated image
+      status: 'Post Production',
+      image: redVeil,
       video: 'https://vimeo.com/example', // Placeholder
       tags: ['Horror', 'Psychology', 'Thriller']
     },
     {
       id: 'photography',
-      title: 'Photography Series',
-      category: 'Photography',
+      title: 'Red Veil',
+      category: 'Thriller Film',
       description: 'Curated collection of cinematic photography exploring light and shadow',
       year: '2024',
-      status: 'Ongoing',
-      image: '/placeholder.svg', // Will be replaced with generated image
-      link: 'https://pinterest.com/example', // Placeholder
+      status: 'Pre-Production',
+      image: '/placeholder.svg',
+      video: 'https://pinterest.com/example', // Placeholder
       tags: ['Photography', 'Portraits', 'Cinematic']
     },
     {
@@ -44,8 +46,8 @@ const PortfolioSection = () => {
       category: 'Post-Production',
       description: 'Hip-hop paced reel showcasing color grading and visual enhancement work',
       year: '2024',
-      status: 'Released',
-      image: '/placeholder.svg', // Will be replaced with generated image
+      status: 'Pre-Production',
+      image: '/placeholder.svg',
       video: 'https://vimeo.com/example', // Placeholder
       tags: ['Color Grading', 'Post-Production', 'Music Video']
     }
@@ -79,12 +81,20 @@ const PortfolioSection = () => {
               {/* Project Image/Video Preview */}
               <div className="aspect-video relative overflow-hidden bg-surface-elevated">
                 
-                {/* Placeholder for project image */}
-                <div className="w-full h-full bg-gradient-to-br from-surface to-surface-elevated flex items-center justify-center">
-                  <div className="text-center text-muted-foreground">
-                    <Play size={48} className="mx-auto mb-2 opacity-60" />
-                    <p className="text-sm">{project.title}</p>
-                  </div>
+                {/* Project image with Play icon overlay */}
+                <div className="w-full h-full relative">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  />
+                  {/* Overlay Play icon for video projects */}
+                  {project.video && (
+                    <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/30">
+                      <Play size={48} className="mb-2 opacity-80 text-white" />
+                      <p className="text-sm text-white drop-shadow">{project.title}</p>
+                    </div>
+                  )}
                 </div>
                 
                 {/* Hover Overlay */}
@@ -96,11 +106,6 @@ const PortfolioSection = () => {
                       <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg font-medium">
                         <Play size={16} />
                         Watch Film
-                      </div>
-                    ) : project.link ? (
-                      <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg font-medium">
-                        <ExternalLink size={16} />
-                        View Gallery
                       </div>
                     ) : null}
                   </div>
