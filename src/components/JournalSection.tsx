@@ -50,7 +50,7 @@ const JournalSection = () => {
             Journal
           </h2>
           <p className="body-text text-xl text-muted-foreground max-w-2xl mx-auto">
-            Thoughts, behind-the-scenes stories, and insights from my creative process
+           Currently being worked on!
           </p>
         </div>
 
@@ -108,16 +108,7 @@ const JournalSection = () => {
           ))}
         </div>
 
-        {/* View All Button */}
-        <div className="text-center mt-12">
-          <button className="inline-flex items-center gap-2 px-6 py-3 border border-border rounded-lg font-medium transition-all duration-300 hover:bg-card hover:border-primary group">
-            View All Articles
-            <ArrowRight 
-              size={16} 
-              className="transition-transform duration-300 group-hover:translate-x-1" 
-            />
-          </button>
-        </div>
+       
       </div>
     </section>
   );

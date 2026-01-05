@@ -37,8 +37,8 @@ const ContactSection = () => {
     { 
       name: 'Email', 
       icon: Mail, 
-      url: 'mailto:juanshaju511@gmail.com',
-      handle: 'juanshaju511@gmail.com'
+      url: 'mailto:visuarealmstudios@gmail.com',
+      handle: 'visuarealmstudios@gmail.com'
     },
   ];
 

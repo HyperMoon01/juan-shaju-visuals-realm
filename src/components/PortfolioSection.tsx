@@ -1,7 +1,9 @@
 import { ExternalLink, Play } from 'lucide-react';
 import { useState } from 'react';
 import Signal86 from "@/assets/signal86.jpg";
-import redVeil from "@/assets/red-veil.jpg";
+import redVeil from "@/assets/subjectv.png";
+import tfos from "@/assets/tfos.jpg"
+import TKLB from "@/assets/TKLB.png"
 
 const PortfolioSection = () => {
   const [hoveredProject, setHoveredProject] = useState<string | null>(null);
@@ -11,45 +13,45 @@ const PortfolioSection = () => {
       id: 'signal-86',
       title: 'Signal 86',
       category: 'Sci-Fi Film',
-      description: 'A silent sci-fi thriller  that explores personal curiosity through visual storytelling',
+      description: 'She followed the sound. Then everything went silent. Signal 86 is a psychological horror short film, shot entirely on black-and-white 16mm film using a Bolex camera, then digitized for editing and presentation. This analog project embraces minimalist storytelling, haunting sound design, and vintage textures to explore the eerie relationship between perception and signal.',
       year: '2024',
       status: 'Released',
       image: Signal86,
-      video: 'https://vimeo.com/example', // Placeholder
+      video: 'https://youtu.be/9Ita1ncOgIU?si=J6CYgGEC_X8oI3Ja', // Placeholder
       tags: ['Thriller', 'Silent Film', 'Sci-FI']
     },
     {
       id: 'red-veil',
       title: 'Subject V',
       category: 'Horror Film',
-      description: 'A psychological horror film exploring the depths of human consciousness',
-      year: '2024',
+      description: 'A young woman, haunted by nightmarish visions of a creeping figure, begins to unravel the fragile boundary between her traumatic past in a sinister experiment and her terrifying present. As the line between reality, hallucination, and supernatural pursuit blurs completely, she must confront a horrifying truth: the monster hunting her may not be a demon from folklore, but the very real and unfinished horror of her own past.',
+      year: '2024-2025',
       status: 'Post Production',
       image: redVeil,
-      video: 'https://vimeo.com/example', // Placeholder
+      video: '', // Placeholder
       tags: ['Horror', 'Psychology', 'Thriller']
     },
     {
       id: 'photography',
-      title: 'Red Veil',
-      category: 'Thriller Film',
-      description: 'Curated collection of cinematic photography exploring light and shadow',
-      year: '2024',
-      status: 'Pre-Production',
-      image: '/placeholder.svg',
-      video: 'https://pinterest.com/example', // Placeholder
-      tags: ['Photography', 'Portraits', 'Cinematic']
+      title: 'The Frequency of Silence',
+      category: 'Drama Film',
+      description: 'A grieving teenager discovers her late grandfather left her one final gift: a camera that does not capture the past, but reveals the love he left behind in the silence.',
+      year: '2025',
+      status: 'Post-Production',
+      image: tfos,
+      video: '', // Placeholder
+      tags: ['Drama', 'Colorful', 'Cinematic']
     },
     {
       id: 'color-grading',
-      title: 'Color Grading Reel',
-      category: 'Post-Production',
-      description: 'Hip-hop paced reel showcasing color grading and visual enhancement work',
-      year: '2024',
+      title: 'The Key Left Behind',
+      category: 'Myster/Psychological Film',
+      description: 'A psychological ghost story where the haunting is a shared memory. Returning to her staged family home, a young woman unravels the fragile boundary between grief and guilt, learning that a house does not need specters to be haunted.',
+      year: '2026',
       status: 'Pre-Production',
-      image: '/placeholder.svg',
-      video: 'https://vimeo.com/example', // Placeholder
-      tags: ['Color Grading', 'Post-Production', 'Music Video']
+      image: TKLB,
+      video: '', // Placeholder
+      tags: ['Mystery', 'Thriller', 'Psychological']
     }
   ];
 
@@ -155,15 +157,7 @@ const PortfolioSection = () => {
         </div>
 
         {/* View More */}
-        <div className="text-center mt-12">
-          <button className="inline-flex items-center gap-2 px-6 py-3 border border-border rounded-lg font-medium transition-all duration-300 hover:bg-surface-elevated hover:border-primary group">
-            View Full Portfolio
-            <ExternalLink 
-              size={16} 
-              className="transition-transform duration-300 group-hover:translate-x-1" 
-            />
-          </button>
-        </div>
+        
       </div>
     </section>
   );
