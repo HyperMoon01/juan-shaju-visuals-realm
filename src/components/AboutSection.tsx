@@ -1,13 +1,16 @@
-import juanPortrait from "@/assets/juan-portrait.jpg";
+import juanPortrait from "@/assets/juanport.jpg";
+
 
 const AboutSection = () => {
   const milestones = [
     { year: '2023', event: 'Film Club President', description: 'Led creative direction and production workflows' },
-    { year: '2024', event: 'Signal 86 Release', description: 'Silent comedy bromance short film' },
-    { year: '2024', event: 'Red Veil Production', description: 'Psychological horror film in development' },
-    { year: '2025', event: 'TMU Image Arts', description: 'Advancing craft through formal education' },
-    { year: '2025', event: 'Nova Realm Entertainment', description: 'Building a creative studio for compelling stories' },
-  ];
+    { year: '2024', event: 'Signal 86 Release', description: 'Silent Sci-fi/thriller film shot on Bolex 16mm' },
+    { year: '2024', event: 'TMU Image Arts', description: 'Advancing craft through formal education' },
+    { year: '2024', event: 'Subject V (Production)', description: 'Psychological horror film in development' },
+    { year: '2025', event: 'Visuarealm Studio', description: 'Building a creative studio for compelling stories' },
+    { year: '2025', event: 'The Frequency of Silence (Production)', description: 'A grieving teenager discovers her late grandfather left her one final gift: a camera that does not capture the past, but reveals the love he left behind in the silence.' },
+    { year: '2026', event: 'The Key Left Behind (Production)', description: 'A psychological ghost story where the haunting is a shared memory. Returning to her staged family home, a young woman unravels the fragile boundary between grief and guilt, learning that a house does not need specters to be haunted.' },
+    ];
 
   return (
     <section id="about" className="min-h-screen bg-background py-20">
@@ -45,14 +48,14 @@ const AboutSection = () => {
               
               <div className="space-y-4 body-text text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  I'm an 18-year-old filmmaker and storyteller based in Toronto, Canada. 
+                  I'm an 19-year-old filmmaker and storyteller based in Toronto, Canada. 
                   I direct, edit, and produce short films like <em>Signal 86</em> and <em>Red Veil</em>. 
                   My passion is telling raw, human stories that feel alive.
                 </p>
                 
                 <p>
-                  I'm building <strong className="text-primary">Nova Realm Entertainment</strong> to create 
-                  films and art that move people. Every frame, every cut, every story — it all matters.
+                  I'm building <strong className="text-primary">Visuarealm Studios</strong> to create 
+                  films and art that move people. Every frame, every cut, every story.. it all matters.
                 </p>
                 
                 <p>

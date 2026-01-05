@@ -25,8 +25,8 @@ const ContactSection = () => {
     { 
       name: 'Instagram', 
       icon: Instagram, 
-      url: 'https://instagram.com/juanshaju',
-      handle: '@juanshaju'
+      url: 'https://instagram.com/juan.shaju',
+      handle: '@juan.shaju'
     },
     { 
       name: 'LinkedIn', 
@@ -37,8 +37,8 @@ const ContactSection = () => {
     { 
       name: 'Email', 
       icon: Mail, 
-      url: 'mailto:hello@juanshaju.com',
-      handle: 'hello@juanshaju.com'
+      url: 'mailto:visuarealmstudios@gmail.com',
+      handle: 'visuarealmstudios@gmail.com'
     },
   ];
 

@@ -84,7 +84,7 @@ const HeroSection = () => {
 
         <div className="fade-in-up opacity-0" style={{ animationDelay: '1.4s', animationFillMode: 'forwards' }}>
           <p className="body-text text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-            I'm Juan Shaju — filmmaker, storyteller, and visual creative. 
+            I'm Juan Shaju — filmmaker, storyteller, and student. 
             <br className="hidden md:block" />
             This is my space to share the worlds I create.
           </p>

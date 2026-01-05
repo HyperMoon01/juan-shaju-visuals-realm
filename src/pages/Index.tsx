@@ -67,7 +67,7 @@ const Index = () => {
                   Juan Shaju
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  © 2025 Juan Shaju | Designed with love
+                  © 2026 Juan Shaju | Designed to be felt.
                 </p>
               </div>
 
@@ -96,6 +96,14 @@ const Index = () => {
                 >
                   Contact
                 </button>
+
+                <button 
+                  onClick={() => document.getElementById('hero')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="hover:text-primary transition-colors"
+                >
+                  Resume
+                </button>
+                
               </div>
 
               <div className="text-center md:text-right">

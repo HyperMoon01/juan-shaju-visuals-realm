@@ -7,10 +7,10 @@ const DynamicTagline = () => {
 
   const taglines = [
     'Filmmaker.',
-    'Storyteller.',
-    'Visual Creative.',
-    'Colorist.',
-    'Founder, Nova Realm Entertainment.'
+    'Director / Producer.',
+    'Script Writer.',
+    'Photographer.',
+    'Founder, Visuarealm Studios Inc.'
   ];
 
   useEffect(() => {

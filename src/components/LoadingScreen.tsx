@@ -23,7 +23,7 @@ const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
         const increment = Math.random() * 3 + 1;
         return Math.min(prev + increment, 100);
       });
-    }, 80);
+    }, 40);
 
     return () => clearInterval(interval);
   }, [onComplete]);
@@ -34,7 +34,7 @@ const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
     }`}>
       
       {/* Flash effect */}
-      <div className={`absolute inset-0 bg-primary transition-opacity duration-100 ${
+      <div className={`absolute inset-0 bg-primary transition-opacity duration-50 ${
         isComplete ? 'opacity-100' : 'opacity-0'
       }`} />
 
@@ -65,7 +65,7 @@ const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
         </div>
 
         {/* Loading text */}
-        <div className="space-y-2">
+        <div className="space-y-0">
           <p className="font-mono text-sm text-muted-foreground tracking-widest uppercase">
             Loading your reel...
           </p>
@@ -84,9 +84,9 @@ const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
         </div>
 
         {/* Vintage film lab text */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        <div className="absolute bottom-9 left-1/2 transform -translate-x-1/2">
           <p className="font-mono text-xs text-muted-foreground/60 tracking-wider">
-            VISUAREALM FILM LAB
+            VISUARealm FILM LAB
           </p>
         </div>
       </div>
